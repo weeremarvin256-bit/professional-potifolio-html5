@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Contact form for Your Name.">
+  <title>Contact Me | Your Name - Professional Portfolio</title>
+</head>
+<body>
+
+  <header>
+    <h1>Contact Me</h1>
+    <p>Send me a message and I will reply as soon as I can</p>
+  </header>
+
+  <nav aria-label="Main navigation">
+    <ul>
+      <li><a href="index.html">Home</a></li>
+      <li><a href="about.html">About Me</a></li>
+      <li><a href="gallery.html">Gallery</a></li>
+      <li><a href="data.html">Skills and Results</a></li>
+      <li><a href="contact.html">Contact Me</a></li>
+    </ul>
+  </nav>
+
+  <main>
+    <section>
+      <h2>Contact Form</h2>
+      <p>Fields marked with an asterisk (*) are required.</p>
+
+      <!-- Replace the action with your form service URL when you have one. -->
+      <form action="#" method="post">
+
+        <!-- <fieldset> + <legend> group related fields; helps screen-reader users -->
+        <fieldset>
+          <legend>Your details</legend>
+
+          <!-- Each <label for="..."> matches the input's id, so clicking the label focuses the field -->
+          <p>
+            <label for="name">Full name *</label><br>
+            <input type="text" id="name" name="name" required minlength="2" maxlength="60" placeholder="Jane Doe" autocomplete="name">
+          </p>
+
+          <!-- type="email" gives built-in format checking and the right mobile keyboard -->
+          <p>
+            <label for="email">Email address *</label><br>
+            <input type="email" id="email" name="email" required placeholder="jane@example.com" autocomplete="email">
+          </p>
+
+          <!-- type="tel" shows a number keypad on phones. pattern validates digits, spaces, + and - -->
+          <p>
+            <label for="phone">Phone number *</label><br>
+            <input type="tel" id="phone" name="phone" required pattern="[0-9+\- ]{7,15}" title="Enter 7 to 15 digits. You may use +, - and spaces." placeholder="+256 700 000000" autocomplete="tel">
+          </p>
+        </fieldset>
+
+        <fieldset>
+          <legend>Your message</legend>
+          <p>
+            <label for="message">Message *</label><br>
+            <textarea id="message" name="message" rows="6" cols="40" required minlength="10" maxlength="500" placeholder="Write your message here"></textarea>
+          </p>
+        </fieldset>
+
+        <!-- A <button> with clear text is better than "Submit" for usability -->
+        <p>
+          <button type="submit">Send message</button>
+          <button type="reset">Clear form</button>
+        </p>
+
+      </form>
+    </section>
+  </main>
+
+  <footer>
+    <p>&copy; 2026 Your Name. Built with HTML5 for SWE2106.</p>
+  </footer>
+
+</body>
+</html>
