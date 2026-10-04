@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<!-- lang="en" helps screen readers pick the right pronunciation (accessibility) -->
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Home page of Your Name, a web development student and aspiring professional.">
+  <!-- Unique <title> per page: required for SEO and for screen-reader users -->
+  <title>Home | Your Name - Professional Portfolio</title>
+</head>
+<body>
+
+  <!-- <header>: introductory banner for the page (site name + tagline) -->
+  <header>
+    <h1>Your Name</h1>
+    <p>Web Developer in Training: building clean, accessible websites</p>
+  </header>
+
+  <!-- <nav>: main navigation. A <ul> inside tells assistive tech how many links exist -->
+  <nav aria-label="Main navigation">
+    <ul>
+      <li><a href="index.html">Home</a></li>
+      <li><a href="about.html">About Me</a></li>
+      <li><a href="gallery.html">Gallery</a></li>
+      <li><a href="data.html">Skills</a></li>
+      <li><a href="contact.html">Contact Me</a></li>
+    </ul>
+  </nav>
+
+  <!-- <main>: the unique content of this page. Only one <main> per page -->
+  <main>
+
+    <!-- <article>: self-contained piece of content that makes sense on its own -->
+    <article>
+      <h2>Welcome to my portfolio</h2>
+      <p>Hello, I am Prudence, a student studying Software Engineering. I enjoy turning ideas into well-structured, accessible web pages.</p>
+      <p>This site shows my background, my work, my skills and how to reach me. Every page uses semantic HTML5 so that it works well for everyone, including people who use screen readers.</p>
+      <p>Start with <a href="about.html">my biography and career milestones</a> or see <a href="gallery.html">my media gallery</a>.</p>
+    </article>
+
+    <!-- <aside>: related but secondary content, separate from the main article -->
+    <aside>
+      <h2>Quick links</h2>
+      <ul>
+        <li><a href="data.html">View my skill proficiency table</a></li>
+        <li><a href="contact.html">Send me a message</a></li>
+      </ul>
+    </aside>
+
+  </main>
+
+  <!-- <footer>: closing info for the page -->
+  <footer>
+    <p>&copy; 2026 Your Name. Built with HTML5 for SWE2106.</p>
+  </footer>
+
+</body>
+</html>
