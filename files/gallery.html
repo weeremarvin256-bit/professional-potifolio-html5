@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Photos and video from Your Name's professional portfolio.">
+  <title>Gallery | Your Name - Professional Portfolio</title>
+</head>
+<body>
+
+  <header>
+    <h1>Media Gallery</h1>
+    <p>Images and video that show my work and interests</p>
+  </header>
+
+  <nav aria-label="Main navigation">
+    <ul>
+      <li><a href="index.html">Home</a></li>
+      <li><a href="about.html">About Me</a></li>
+      <li><a href="gallery.html">Gallery</a></li>
+      <li><a href="data.html">Skills and Results</a></li>
+      <li><a href="contact.html">Contact Me</a></li>
+    </ul>
+  </nav>
+
+  <main>
+
+    <section>
+      <h2>Photos</h2>
+      <!-- Replace the file names and alt text with your own images saved in /images -->
+
+      <!-- <figure> + <figcaption> link an image with its caption. Alt text is read aloud by screen readers -->
+      <figure>
+        <img src="C:\Users\YOUPER\Desktop\potifolio\images\laptop.jpg" alt="My desk with a laptop open to a code editor, a notebook and a cup of tea" width="400">
+        <figcaption>Figure 1: My workspace where I write and test code.</figcaption>
+      </figure>
+
+      <figure>
+        <img src="C:\Users\YOUPER\Desktop\potifolio\images\technology.jpg" alt="Screenshot of a school project website showing a blue navigation bar and three article cards" width="400">
+        <figcaption>Figure 2: A web project I built during my studies.</figcaption>
+      </figure>
+
+      <figure>
+        <img src="C:\Users\YOUPER\Desktop\potifolio\images\laptop.jpg" alt="Debugging my code" width="400">
+        <figcaption>Figure 3: Removing Errors from my code.</figcaption>
+      </figure>
+    </section>
+
+    <section>
+      <h2>Video</h2>
+      <!-- <video controls> gives keyboard-accessible play/pause. The text inside is a fallback for old browsers -->
+      <figure>
+        <video controls width="480" poster="images/video-poster.jpg">
+          <source src="videos/intro.mp4" type="video/mp4">
+          <!-- <track> adds captions for deaf and hard-of-hearing users. Create captions.vtt if you can -->
+          <track kind="captions" src="videos/captions.vtt" srclang="en" label="English">
+          <p>Your browser does not support video. <a href="videos/intro.mp4">Download the introduction video</a>.</p>
+        </video>
+        <figcaption>Video: A short introduction about me and my goals.</figcaption>
+      </figure>
+    </section>
+
+  </main>
+
+  <footer>
+    <p>&copy; 2026 Your Name. Built with HTML5 for SWE2106.</p>
+  </footer>
+
+</body>
+</html>
